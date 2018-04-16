@@ -1,12 +1,16 @@
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 160px;
-  line-height: 160px;
+  cursor: pointer;
   background: #364d79;
   color: #fff;
-  overflow: hidden;
+
+  img{
+    width: 100%;
+  }
 }
 
-h3 {
-  color: #fff;
+.btnBox {
+  button{
+    width: 100px;
+  }
 }
