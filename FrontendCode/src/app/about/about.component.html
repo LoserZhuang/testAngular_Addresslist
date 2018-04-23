@@ -1,0 +1,13 @@
+<sd-navbar></sd-navbar>
+<div class="about">
+  <nz-collapseset nzAccordion>
+    <nz-collapse *ngFor="let panel of panels" [nzTitle]="panel.text" [nzActive]="panel.active">
+      <div nz-row>
+        <div nz-col nzSpan="6">
+          <img [src]="panel.icon" alt="{{panel.text}}">
+        </div>
+        <div nz-col nzSpan="18">{{ panel?.desc }}</div>
+      </div>
+    </nz-collapse>
+  </nz-collapseset>
+</div>

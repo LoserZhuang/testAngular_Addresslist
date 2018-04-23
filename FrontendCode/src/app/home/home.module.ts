@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import {HomeComponent} from "./home.component";
 import {HomeRoutingModule} from "./home.routing.module";
 import {SharedModule} from "../shared/shared.module";
-import {CommonModule} from "@angular/common";
+import {NgZorroAntdModule} from "ng-zorro-antd";
 
 @NgModule({
   declarations:[
@@ -13,8 +13,8 @@ import {CommonModule} from "@angular/common";
   ],
   imports:[
     HomeRoutingModule,
-    SharedModule,
-    CommonModule
+    NgZorroAntdModule.forRoot(),
+    SharedModule
   ],
   exports:[HomeComponent],
 })

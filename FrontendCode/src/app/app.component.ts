@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'app';
   constructor(private _router: Router,){
     console.log("------------------------------")
-    this._router.navigate(['/']);
+    // this._router.navigate(['/']);
   }
 }
